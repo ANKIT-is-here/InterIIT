@@ -1,0 +1,38 @@
+<!-- I could have done it with React also but due to time constraint I have done it with HTML, CSS and JS. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godown Inventory</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Godowns</h2>
+
+            <input type="text" id="search-input" placeholder="Search locations or items..." />
+
+            <select id="category-filter">
+                <option value="all">All Items</option>
+                <option value="Toys">Toys</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Tools">Tools</option>
+            </select>
+
+            <div id="treeview"></div>
+        </div>
+
+        <div class="main-content">
+            <h2>Item Details</h2>
+            <div id="item-details">
+                <p>Select an item to view details</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
